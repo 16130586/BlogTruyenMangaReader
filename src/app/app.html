@@ -1,0 +1,23 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-avatar>
+            <img src="/img/avarta.jpg" />
+        </ion-avatar>
+    </ion-header>
+
+    <ion-content>
+        <ion-list no-lines>
+            <ion-list-header>
+                Tool
+            </ion-list-header>
+            <button ion-item *ngFor="let page of pages" [class.activeHighlightMenu]="isActivePage(page)" (click)="openPage(page)">
+            <ion-icon [name] = "page.iconName"  item-left></ion-icon>
+            {{page.title}}
+            </button>
+        </ion-list>
+    </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

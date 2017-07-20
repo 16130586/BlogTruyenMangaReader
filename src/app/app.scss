@@ -1,0 +1,57 @@
+// http://ionicframework.com/docs/v2/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.activeHighlightMenu {
+    margin: 10px;
+    -webkit-box-shadow: 0px 9px 32px 0px rgba(76, 175, 80, 1);
+    -moz-box-shadow: 0px 9px 32px 0px rgba(76, 175, 80, 1);
+    box-shadow: 0px 9px 32px 0px rgba(76, 175, 80, 1);
+    background: rgba(233, 246, 252, 1);
+    background: -moz-linear-gradient(left, rgba(233, 246, 252, 1) 0%, rgba(153, 228, 255, 0.94) 32%, rgba(50, 204, 251, 0.9) 51%, rgba(117, 219, 251, 0.86) 69%, rgba(233, 246, 252, 0.86) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(233, 246, 252, 1)), color-stop(32%, rgba(153, 228, 255, 0.94)), color-stop(51%, rgba(50, 204, 251, 0.9)), color-stop(69%, rgba(117, 219, 251, 0.86)), color-stop(100%, rgba(233, 246, 252, 0.86)));
+    background: -webkit-linear-gradient(left, rgba(233, 246, 252, 1) 0%, rgba(153, 228, 255, 0.94) 32%, rgba(50, 204, 251, 0.9) 51%, rgba(117, 219, 251, 0.86) 69%, rgba(233, 246, 252, 0.86) 100%);
+    background: -o-linear-gradient(left, rgba(233, 246, 252, 1) 0%, rgba(153, 228, 255, 0.94) 32%, rgba(50, 204, 251, 0.9) 51%, rgba(117, 219, 251, 0.86) 69%, rgba(233, 246, 252, 0.86) 100%);
+    background: -ms-linear-gradient(left, rgba(233, 246, 252, 1) 0%, rgba(153, 228, 255, 0.94) 32%, rgba(50, 204, 251, 0.9) 51%, rgba(117, 219, 251, 0.86) 69%, rgba(233, 246, 252, 0.86) 100%);
+    background: linear-gradient(to right, rgba(233, 246, 252, 1) 0%, rgba(153, 228, 255, 0.94) 32%, rgba(50, 204, 251, 0.9) 51%, rgba(117, 219, 251, 0.86) 69%, rgba(233, 246, 252, 0.86) 100%);
+}
+
+.ios,
+.md {
+    ion-list {
+        button {
+            width: 96%;
+            margin: 10px 3%;
+            -webkit-box-shadow: 0px 3px 32px 0px rgba(76, 175, 80, 1);
+            -moz-box-shadow: 0px 3px 32px 0px rgba(76, 175, 80, 1);
+            box-shadow: 0px 3px 32px 0px rgba(76, 175, 80, 1);
+            -webkit-border-radius: 118px 128px 128px 128px;
+            border-radius: 125px 60px 60px 125px;
+            -moz-border-radius: 125px 60px 60px 125px;
+            -webkit-border-radius: 125px 60px 60px 125px;
+            border: 2px solid #FF1744;
+            background-color: #EFEBE9;
+        }
+        ion-list-header {
+            color: #F44336;
+            font-size: 150%;
+            font-family: sans-serif;
+        }
+        ion-icon {
+            color: #90A4AE;
+        }
+    }
+    ion-menu {
+        background-color: #B0BEC5;
+    }
+}
