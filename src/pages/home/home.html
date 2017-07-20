@@ -7,6 +7,25 @@
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="home" padding>
+
+    <ion-grid>
+        <ion-row>
+            <h2>Hot news</h2>
+        </ion-row>
+        <ion-row class="up-part" style="background-color: #e74c3c;">
+            <ion-col>
+                <ion-scroll scrollX="true" style="height:100%;">
+                    <ion-img class="hot-news" width="80px" height="80px" *ngFor="let img of imgs" src={{img.url}}></ion-img>
+                </ion-scroll>
+            </ion-col>
+
+        </ion-row>
+
+        <ion-row class="low-part " style="background-color: #f1c40f; ">
+            <ion-col>Sunflower!</ion-col>
+        </ion-row>
+    </ion-grid>
+
 
 </ion-content>

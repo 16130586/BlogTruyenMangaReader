@@ -10,7 +10,7 @@
             <ion-list-header>
                 Tool
             </ion-list-header>
-            <button ion-item *ngFor="let page of pages" [class.activeHighlightMenu]="isActivePage(page)" (click)="openPage(page)">
+            <button ion-item menuClose *ngFor="let page of pages" [class.activeHighlightMenu]="isActivePage(page)" (click)="openPage(page)">
             <ion-icon [name] = "page.iconName"  item-left></ion-icon>
             {{page.title}}
             </button>
